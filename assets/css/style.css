@@ -1,0 +1,282 @@
+/*
+Template Name: 
+Author:
+version:
+
+-----------------------------------------------------------
+Table of Contents
+-----------------------------------------------------------
+1) Common CSS
+*/
+
+/* Common CSS Start */
+body{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, ul, ol, span, p{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+/* Common CSS End */
+
+/* Navbar CSS Start */
+#navbar{
+    background: black;
+    position: relative;
+}
+
+#navbar ul li a{
+    display: inline-block;
+    color: #fff;
+    margin: 15px 10px;
+}
+
+.searchOverlay{
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    */width: 0;
+    height: 0;
+    background: rgba(255, 255, 255);
+    visibility: hidden;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    z-index: 9999999999;
+}
+
+.searchOverlay form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.searchOverlay form input{
+    border: 0;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.searchOverlay form img{
+    width: 100px;
+    height: 100px;
+}
+
+.searchOverlay i{
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    top: 25%;
+    right: 25%;
+}
+/* //Navbar CSS End */
+
+#log_sign_in {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    background: goldenrod;
+    transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -ms-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    z-index: 999999;
+}
+
+#log_sign_in .loginsignupbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, );
+    -moz-transform: translate(-50%, );
+    -ms-transform: translate(-50%, );
+    -o-transform: translate(-50%, );
+    text-align: center;
+    background: blue;
+    width: 300px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#log_sign_in .creating_form{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#log_sign_in .creating_form{
+    text-align: center;
+    background: blueviolet;
+    background: red;
+    width: 600px;
+    position: relative;
+}
+
+#log_sign_in .creating_form .formbtn span{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px 50px;
+    cursor: pointer;
+}
+
+#log_sign_in .creating_form form{
+    text-align: center;
+}
+
+#log_sign_in .creating_form form input{
+    display: block;
+    margin: 15px 0;
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    text-align: center;
+}
+
+
+                  /* sidebar */
+.sidebar{
+    background-color: #DA000B;
+    padding:10px;
+}
+.sidebar-banner{
+    margin-top: 80px;
+}
+.item-list{
+    margin-left: 40px;
+}
+.item-list ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding:5px 20px;
+    color:black;
+    transition: 0.5s;
+}
+.item-list ul li:hover{
+    background-color: #FFAAAA;
+    color:white;
+    border: 1px solid crimson;
+}
+.icon-list{
+    padding:20px;
+    background-color: #B10009;
+    width:330px;
+    margin-top: 20px;
+    border-radius: 0.5rem;
+    padding-left: 20px;
+    margin-left: 35px;
+    
+}
+.first-icon,.second-icon, .third-icon, .fourth-icon{
+    display: flex;
+    color:white;
+    margin-top: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+.first-icon:hover,.second-icon:hover, .third-icon:hover, .fourth-icon:hover{
+    background-color: #D46A6A;
+    color:white;
+}
+.first-icon i, .second-icon i, .third-icon i, .fourth-icon i{
+    transform: translate(30px);
+    font-size: 40px;
+    color:white;
+}
+.first-icon h3, .second-icon h3, .third-icon h3, .fourth-icon h3{
+    transform: translate(80px);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.fourth-icon h3{
+    margin-left: -15px;
+}
+.third-icon h3{
+    margin-left: -7px;
+}
+                                /* Slider */
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:80%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.thumbnail{
+    background-color: #FB0F1B;
+    margin-left: 5px;
+    transform: scale(.9);
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+.thumbnail:hover{
+    transform: scale(1);
+}
+.unique-img{
+    margin:0px;
+}
+.slider-img{
+    height: 120px;
+    width:220px;
+}
+.thumbnail h4{
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.prev-btn{
+    font-size: 40px;
+    color:white;
+    transform: translate(40px,130px);
+    cursor: pointer;
+}
+.next-btn{
+    font-size: 40px;
+    color:white;
+    transform: translate(810px,-110px);
+    cursor: pointer;
+}
+
+.video-left{
+   transform: translate(30px,0px);
+    width:690px;
+    height:380px;
+    cursor: pointer;
+    margin: 0 auto;
+}
